@@ -399,12 +399,17 @@ button:focus-visible {
 /* ============ 3. Project page ============ */
 
 .project-page {
+  --project-content-width: 46rem;
   background: #fff;
   color: #1a1a1a;
 }
 
 .project-topbar {
-  padding: 0.85rem clamp(1rem, 4vw, 2.5rem);
+  padding-block: 0.85rem;
+  padding-inline: max(
+    1.25rem,
+    calc((100% - var(--project-content-width)) / 2)
+  );
   border-bottom: 1px solid #ececec;
 }
 
@@ -423,7 +428,7 @@ button:focus-visible {
 }
 
 .project-container {
-  width: min(100% - 2.5rem, 900px);
+  width: min(100% - 2.5rem, var(--project-content-width));
   margin: 0 auto;
   padding: clamp(2.2rem, 6vw, 4rem) 0 3rem;
 }
@@ -449,11 +454,16 @@ button:focus-visible {
 .project-hero h1 {
   max-width: 46rem;
   margin: 0 auto 1.1rem;
-  font-size: clamp(1.8rem, 4.4vw, 2.9rem);
+  font-size: clamp(0.95rem, 4.4vw, 2.5rem);
   font-weight: 700;
   letter-spacing: -0.015em;
   line-height: 1.18;
   text-wrap: balance;
+}
+
+.project-title-line {
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .project-authors {
@@ -549,7 +559,7 @@ button:focus-visible {
 }
 
 .project-section > p {
-  max-width: 44rem;
+  max-width: var(--project-content-width);
   margin: 0 auto 1.1rem;
   font-size: 1.04rem;
   line-height: 1.75;
@@ -560,7 +570,9 @@ button:focus-visible {
   margin-bottom: 0;
 }
 
-.abstract-text {
+.project-section > p,
+.tool-card figcaption p,
+.deployment-text p {
   text-align: justify;
 }
 
@@ -573,7 +585,7 @@ button:focus-visible {
 .project-video {
   display: block;
   width: 100%;
-  max-width: 44rem;
+  max-width: var(--project-content-width);
   aspect-ratio: 16 / 9;
   margin: 0 auto;
   border-radius: 6px;
@@ -584,7 +596,7 @@ button:focus-visible {
 /* --- figures --- */
 
 .project-figure {
-  max-width: 44rem;
+  max-width: var(--project-content-width);
   margin: 1.6rem auto;
 }
 
@@ -656,7 +668,7 @@ button:focus-visible {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
   gap: 1.6rem;
   align-items: start;
-  max-width: 52rem;
+  max-width: var(--project-content-width);
   margin: 2.2rem auto 0;
 }
 
@@ -696,7 +708,7 @@ button:focus-visible {
 
 .citation-block {
   overflow-x: auto;
-  max-width: 44rem;
+  max-width: var(--project-content-width);
   margin: 0 auto;
   border: 1px solid #e4e4e4;
   border-radius: 6px;
