@@ -5,51 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Agriculture Punk official site design foundation."
+      content="Agriculture Punk — a movement toward the computerization of farmland. Farmland = Breadboard."
     >
     <title>Agriculture Punk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="./style.css">
   </head>
   <body class="home-page">
     <header class="site-header" aria-label="Site header">
       <a class="site-mark" href="./" aria-label="Agriculture Punk home">
-        Agriculture Punk
+        Agriculture&nbsp;Punk
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="./SIGGRAPH26/">SIGGRAPH26</a>
+        <a href="#manifesto">Manifesto</a>
+        <a href="#isomorphism">Farmland&nbsp;=&nbsp;Breadboard</a>
+        <a href="#practices">Practices</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero-shell" aria-labelledby="home-title">
-        <div class="hero-field" aria-hidden="true"></div>
-        <div class="hero-content">
-          <h1 id="home-title">Agriculture Punk</h1>
-          <div class="button-row" aria-label="Primary links">
-            <a class="button button-primary" href="./SIGGRAPH26/">
-              View SIGGRAPH 2026 Poster
-            </a>
-            <a class="button button-secondary" href="#field">
-              Do Agriculture Punk in Your Field
-            </a>
-          </div>
+      <!-- ============ Hero ============ -->
+      <section class="hero" aria-labelledby="home-title">
+        <p class="hero-kicker">// a movement toward the computerization of farmland</p>
+        <h1 id="home-title">Agriculture<br>Punk</h1>
+        <p class="hero-tagline">
+          Farmland and breadboards share an operational logic: both engage
+          invisible forces through the plugging and unplugging of physical
+          objects. We take this isomorphism seriously — and start prototyping
+          on the land itself.
+        </p>
+        <div class="button-row">
+          <a class="button button-primary" href="./SIGGRAPH26/">
+            Breadboard Farming @ SIGGRAPH 2026
+          </a>
+          <a class="button button-secondary" href="#manifesto">
+            Read the Manifesto
+          </a>
         </div>
       </section>
 
-      <section class="empty-grid" aria-label="Future sections">
-        <article class="empty-section" id="field">
-          <h2>Field</h2>
+      <!-- ============ Manifesto ============ -->
+      <section class="manifesto" id="manifesto" aria-labelledby="manifesto-title">
+        <p class="section-label" id="manifesto-title">Manifesto</p>
+        <div class="manifesto-body">
+          <p class="manifesto-lead">
+            A scarecrow staked into a rice field and an LED plugged into a
+            breadboard are the same gesture.
+          </p>
+          <p>
+            In Japanese agriculture, scarecrows have long been staked into
+            fields as vessels for the paddy deity — welcomed during the growing
+            season, ritually pulled after harvest to release the deity back to
+            the mountains. In electronics prototyping, components are plugged
+            and unplugged on breadboards to compose circuits. Deity and
+            electricity are operationally equivalent: both invisible, both
+            inhabiting a site through object placement, both governed by
+            plugging and unplugging.
+          </p>
+          <p>
+            Agriculture Punk is a movement toward the computerization of
+            farmland — not by covering fields with sensors, but by rereading
+            what farmers already do: observing, judging, believing, and
+            performing ritual, as acts of connection and disconnection. The
+            field is a substrate. The tools are components. The ritual is the
+            program.
+          </p>
+          <p class="manifesto-close">Hello, world — from the field.</p>
+        </div>
+      </section>
+
+      <!-- ============ Isomorphism ============ -->
+      <section class="isomorphism" id="isomorphism" aria-labelledby="iso-title">
+        <p class="section-label" id="iso-title">Farmland = Breadboard</p>
+        <ul class="iso-list">
+          <li>
+            <span class="iso-farm">Scarecrow inserted into the farmland</span>
+            <span class="iso-eq" aria-hidden="true">=</span>
+            <span class="iso-board">Component inserted into the breadboard</span>
+          </li>
+          <li>
+            <span class="iso-farm">Farmland as a grid</span>
+            <span class="iso-eq" aria-hidden="true">=</span>
+            <span class="iso-board">Breadboard as a grid</span>
+          </li>
+          <li>
+            <span class="iso-farm">Paddy deity inhabits the site through placement</span>
+            <span class="iso-eq" aria-hidden="true">=</span>
+            <span class="iso-board">Electricity inhabits the site through placement</span>
+          </li>
+          <li>
+            <span class="iso-farm">Staking, tying, circling, pulling</span>
+            <span class="iso-eq" aria-hidden="true">=</span>
+            <span class="iso-board">Wiring, connecting, routing, unplugging</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============ Practices ============ -->
+      <section class="practices" id="practices" aria-labelledby="practices-title">
+        <p class="section-label" id="practices-title">Practices</p>
+        <article class="practice-card">
+          <a class="practice-media" href="./SIGGRAPH26/">
+            <img
+              src="./assets/siggraph26_teaser.jpg"
+              alt="Farmland and breadboard side by side: a scarecrow staked into a field mirrors a component inserted into a breadboard"
+              width="2306"
+              height="1538"
+            >
+          </a>
+          <div class="practice-body">
+            <p class="practice-number">Practice 001</p>
+            <h2>
+              <a href="./SIGGRAPH26/">Breadboard Farming</a>
+            </h2>
+            <p class="practice-venue">SIGGRAPH 2026 Posters · Los Angeles</p>
+            <p>
+              The first artistic practice of Agriculture Punk. Electronic
+              component-themed tools — LED scarecrows, capacitor scarecrows,
+              jumper-wire naruko — and a system that composes breadboard-style
+              connections across physical farmland. Deployed in a rice field, a
+              cabbage field, and a harvest festival.
+            </p>
+            <a class="practice-link" href="./SIGGRAPH26/">Project page →</a>
+          </div>
         </article>
-        <article class="empty-section" id="circuit">
-          <h2>Circuit</h2>
-        </article>
-        <article class="empty-section" id="ritual">
-          <h2>Ritual</h2>
-        </article>
-        <article class="empty-section" id="archive">
-          <h2>Archive</h2>
-        </article>
+        <p class="practices-note">More practices are being staked into the ground. Stay tuned.</p>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p class="footer-mark" aria-hidden="true">AGRICULTURE PUNK</p>
+      <p>© 2026 Yuki Horiuchi</p>
+    </footer>
   </body>
 </html>

@@ -5,130 +5,347 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="SIGGRAPH 2026 Posters project page for Agriculture Punk: Hello World from Breadboard Farming."
+      content="Agriculture Punk: Hello World from Breadboard Farming — SIGGRAPH 2026 Posters. We reframe agricultural ritual as electronics prototyping and treat farmland as a breadboard."
     >
-    <title>Agriculture Punk: Hello World from Breadboard Farming</title>
+    <title>Agriculture Punk: Hello World from Breadboard Farming — SIGGRAPH 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="../style.css">
   </head>
   <body class="project-page">
+    <nav class="project-topbar" aria-label="Site navigation">
+      <a href="../">← Agriculture Punk</a>
+    </nav>
+
     <main class="project-container">
+      <!-- ============ Header ============ -->
       <header class="project-hero">
-        <h1>Agriculture Punk: Hello World from Breadboard Farming</h1>
-        <p class="project-venue">SIGGRAPH 2026 Posters</p>
+        <p class="project-venue-badge">SIGGRAPH 2026 Posters · Los Angeles · July 19–23, 2026</p>
+        <h1>Agriculture Punk: <br class="wide-only">Hello World from Breadboard Farming</h1>
         <p class="project-authors">
           <span><a href="https://x.com/horiyu_com">Yuki Horiuchi</a></span>
           <span>Karen Furuta</span>
           <span>Jingjing Li</span>
           <span>Yoichi Ochiai</span>
         </p>
-        <p class="project-affiliation">University of Tsukuba</p>
-        <nav class="button-row project-links" aria-label="Project links">
-          <a class="button button-primary" href="./paper.pdf">Paper</a>
-          <a class="button button-secondary" href="./poster.pdf">Poster</a>
-          <a
-            class="button button-secondary"
-            href="https://doi.org/10.1145/3799825.3818733"
-          >
+        <p class="project-affiliation">University of Tsukuba, Digital Nature Group</p>
+        <nav class="project-links" aria-label="Project links">
+          <a class="link-pill" href="https://doi.org/10.1145/3799825.3818733">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm0 2 4 4h-4zM8 13h8v1.5H8zm0 3.5h8V18H8z"/></svg>
+            Paper
+          </a>
+          <a class="link-pill" href="./poster.pdf">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2M8.5 13.5l2.5 3 3.5-4.5 4.5 6H5z"/></svg>
+            Poster
+          </a>
+          <a class="link-pill" href="#video">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m-2 14.5v-9l6 4.5z"/></svg>
+            Video
+          </a>
+          <a class="link-pill" href="https://doi.org/10.1145/3799825.3818733">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.6 13.4a1 1 0 0 1-1.4 1.4 4.8 4.8 0 0 1 0-6.8l3.5-3.5a4.8 4.8 0 0 1 6.8 6.8l-1.8 1.8a6.5 6.5 0 0 0-.4-2.4l.8-.8a2.8 2.8 0 0 0-4-4L10.6 9.4a2.8 2.8 0 0 0 0 4m2.8-2.8a1 1 0 0 1 1.4-1.4 4.8 4.8 0 0 1 0 6.8l-3.5 3.5a4.8 4.8 0 0 1-6.8-6.8l1.8-1.8c0 .8.1 1.6.4 2.4l-.8.8a2.8 2.8 0 0 0 4 4l3.5-3.5a2.8 2.8 0 0 0 0-4"/></svg>
             DOI
           </a>
         </nav>
       </header>
 
-      <section class="project-section" aria-labelledby="teaser-title">
-        <h2 id="teaser-title">Teaser</h2>
-        <figure class="project-teaser">
-          <img
-            src="../assets/siggraph26_teaser.jpg"
-            alt="A capacitor-inspired scarecrow standing in a rice field"
-            width="2306"
-            height="1538"
-          >
-          <figcaption>Field as Breadboard</figcaption>
-        </figure>
-      </section>
+      <!-- ============ Teaser ============ -->
+      <figure class="project-teaser">
+        <img
+          src="../assets/siggraph26_teaser.jpg"
+          alt="Side-by-side comparison of a scarecrow being staked into farmland and an electronic component being inserted into a breadboard, annotated with their shared operational logic"
+          width="2306"
+          height="1538"
+        >
+        <figcaption>
+          <strong>Farmland = Breadboard.</strong> Scarecrows and electronic
+          components share grid structures, invisible forces, and the operations
+          of insertion and removal. Agriculture Punk is a movement toward the
+          computerization of farmland; Breadboard Farming is its first artistic
+          practice.
+        </figcaption>
+      </figure>
 
+      <!-- ============ Abstract ============ -->
       <section class="project-section" aria-labelledby="abstract-title">
         <h2 id="abstract-title">Abstract</h2>
-        <p>
+        <p class="abstract-text">
           Farmland and breadboards share an operational logic: both engage
           invisible forces through the plugging and unplugging of physical
           objects. Drawing on this structural isomorphism, we reframe
           agricultural observation, judgment, belief, and ritual as the
           operations of connection and disconnection found in electronics
-          prototyping, and propose Agriculture Punk, a movement toward the
-          computerization of farmland. We present Breadboard Farming as its
-          first artistic practice: electronic component-themed tools that
-          reinterpret farming implements and ritual objects as circuit elements,
-          together with a system that realizes breadboard-style connections
-          across physical farmland. Through deployments in a rice field, a
-          cabbage field, and a harvest festival, we demonstrate the first
-          redescription of agricultural ritual and situated knowledge through
-          the vocabulary of electronics prototyping.
+          prototyping, and propose <em>Agriculture Punk</em> — a movement toward
+          the computerization of farmland. We present <em>Breadboard
+          Farming</em> as its first artistic practice: electronic
+          component-themed tools that reinterpret farming implements and ritual
+          objects as circuit elements, together with a system that realizes
+          breadboard-style connections across physical farmland. Through
+          deployments in a rice field, a cabbage field, and a harvest festival,
+          we demonstrate the first redescription of agricultural ritual and
+          situated knowledge through the vocabulary of electronics prototyping.
         </p>
       </section>
 
-      <section class="project-section" aria-labelledby="overview-title">
-        <h2 id="overview-title">Overview</h2>
-        <div class="overview-list">
-          <article>
-            <h3>Field as substrate</h3>
-            <p>
-              Breadboard Farming treats farmland as a reconfigurable substrate
-              for connection, observation, and situated judgment.
-            </p>
-          </article>
-          <article>
-            <h3>Scarecrows as components</h3>
-            <p>
-              Scarecrows and naruko are redesigned as LED-, capacitor-, and
-              jumper-wire-themed tools.
-            </p>
-          </article>
-          <article>
-            <h3>Ritual as circuit operation</h3>
-            <p>
-              Staking, tying, circling, and removing tools are interpreted as
-              circuit operations on farmland.
-            </p>
-          </article>
+      <!-- ============ Video ============ -->
+      <section class="project-section" id="video" aria-labelledby="video-title">
+        <h2 id="video-title">Video</h2>
+        <video
+          class="project-video"
+          controls
+          preload="metadata"
+        >
+          <source src="../assets/siggraph26_video.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+          <a href="../assets/siggraph26_video.mp4">Download the video</a>.
+        </video>
+      </section>
+
+      <!-- ============ Concept ============ -->
+      <section class="project-section" aria-labelledby="concept-title">
+        <h2 id="concept-title">Deity and Electricity Are Operationally Equivalent</h2>
+        <p>
+          In Japanese agriculture, scarecrows have long been staked into fields
+          as vessels for the paddy deity believed to dwell in the rice field —
+          welcomed during the growing season and ritually removed after harvest
+          to release the deity back to the mountains. The same operational
+          logic appears in electronics prototyping: components are plugged and
+          unplugged on breadboards to compose circuits. Deity and electricity
+          are operationally equivalent — both invisible, both inhabiting a site
+          through object placement, both governed by plugging and unplugging.
+        </p>
+        <p>
+          From this analogy we propose <strong>Agriculture Punk</strong>, a
+          movement toward the computerization of farmland, and present
+          <strong>Breadboard Farming</strong> as one of its artistic practices:
+          the field is treated as a breadboard, and scarecrows and
+          <em>naruko</em> (rattles that produce sound when a cord is shaken)
+          are redesigned as circuit elements. Rather than augmenting indigenous
+          practice digitally, this work layers a circuit-based interpretation
+          onto it.
+        </p>
+      </section>
+
+      <!-- ============ Tools ============ -->
+      <section class="project-section" aria-labelledby="tools-title">
+        <h2 id="tools-title">Electronic Component-Themed Tools</h2>
+        <p>
+          Scarecrows and naruko are objects long present in Japanese fields,
+          and like circuit components they are operated through placement and
+          removal — staked, tied, and pulled. Rather than bringing existing
+          electronic parts into the field, we redesigned these agricultural
+          objects so that they themselves function as circuit components,
+          fabricating them from materials available in the agricultural
+          environment or tied to rural material culture.
+        </p>
+        <div class="tool-grid">
+          <figure class="tool-card">
+            <img
+              src="../assets/tool_led_scarecrow.jpg"
+              alt="LED-themed scarecrow: bamboo-pole legs, a bamboo basket wrapped with rice-husk bags, and an embedded LED bulb"
+            >
+            <figcaption>
+              <h3>LED-Themed Scarecrow</h3>
+              <p>
+                An LED indicates circuit state by emitting light. Built as a
+                visible marker of intervention points: two bamboo-pole legs on
+                garden stakes, a bamboo basket wrapped with rice-husk bags, and
+                an embedded LED bulb.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="tool-card">
+            <img
+              src="../assets/tool_capacitor_scarecrow.jpg"
+              alt="Capacitor-themed scarecrow: garden buckets wedged between bamboo-pole legs with an embedded pump"
+            >
+            <figcaption>
+              <h3>Capacitor-Themed Scarecrow</h3>
+              <p>
+                A capacitor stores and releases charge. Mapping this onto
+                water, two garden buckets are wedged between bamboo-pole legs,
+                with an embedded pump that discharges the stored water.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="tool-card">
+            <img
+              src="../assets/tool_jumper_naruko.jpg"
+              alt="Jumper-wire-themed naruko: bamboo-pole legs tied with hemp cord carrying wooden slats and rods"
+            >
+            <figcaption>
+              <h3>Jumper-Wire-Themed <em>Naruko</em></h3>
+              <p>
+                A jumper wire connects two points. Two bamboo-pole legs are
+                tied with hemp cord, with wooden slats and rods attached along
+                it to produce sound through changes in tension or contact.
+              </p>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="project-section" aria-labelledby="details-title">
-        <h2 id="details-title">Publication</h2>
-        <dl class="project-meta-list">
-          <div>
-            <dt>DOI</dt>
-            <dd>
-              <a href="https://doi.org/10.1145/3799825.3818733">
-                10.1145/3799825.3818733
-              </a>
-            </dd>
-          </div>
-          <div>
-            <dt>Keywords</dt>
-            <dd>
-              Agriculture, Punk, Breadboard Farming, Ritual, Field Interaction,
-              Scarecrows
-            </dd>
-          </div>
-          <div>
-            <dt>CCS</dt>
-            <dd>Applied computing ~ Media arts</dd>
-          </div>
-        </dl>
+      <!-- ============ System ============ -->
+      <section class="project-section" aria-labelledby="system-title">
+        <h2 id="system-title">Wiring the Field</h2>
+        <p>
+          On a breadboard, holes in the same column are internally connected —
+          inserting components into shared columns wires them together.
+          Breadboard Farming reproduces this principle on farmland, treating
+          the placement of tools as the act of wiring. Every tool carries a UWB
+          module; a master unit recovers their 2D relative positions via
+          multidimensional scaling, yielding a virtual breadboard layer over
+          the field. The two legs of the LED-themed scarecrow define reference
+          columns, polarity is assigned by role, and tools inferred to share a
+          column are treated as electrically connected and triggered via BLE.
+        </p>
+        <figure class="project-figure">
+          <img
+            src="../assets/system_diagram.jpg"
+            alt="Diagram of the field wiring pipeline: UWB distance measurement, mapping positions onto a grid, and determining connectivity to execute actions"
+          >
+          <figcaption>
+            Field wiring: measure mutual distances with UWB, map positions onto
+            a grid, determine connectivity, and execute actions.
+          </figcaption>
+        </figure>
+        <p>
+          We verified basic operation outdoors: placing the positive and
+          negative terminals in the two leg-columns lit the bulb; removing the
+          negative terminal broke the inferred connection and extinguished it.
+          Inserting a capacitor-themed scarecrow between them, the system still
+          resolved a continuous path across all tools — confirming that
+          breadboard-style connections can be composed on farmland through the
+          placement of tools.
+        </p>
       </section>
 
-      <section class="project-section" aria-labelledby="citation-title">
-        <h2 id="citation-title">Citation</h2>
-        <pre class="citation-block"><code>@inproceedings{horiuchi2026agriculturepunk,
-  title={Agriculture Punk: Hello World from Breadboard Farming},
-  author={Horiuchi, Yuki and Furuta, Karen and Li, Jingjing and Ochiai, Yoichi},
-  booktitle={SIGGRAPH 2026 Posters},
-  year={2026},
-  doi={10.1145/3799825.3818733}
-}</code></pre>
+      <!-- ============ Deployments ============ -->
+      <section class="project-section" aria-labelledby="field-title">
+        <h2 id="field-title">Field Implementation</h2>
+        <p>
+          To examine how Breadboard Farming connects to agricultural practice
+          and belief, we deployed the tools in actual fields and at a harvest
+          festival — asking whether they could operate meaningfully within
+          agricultural judgment and local belief, rather than as mere
+          sculptural objects.
+        </p>
+
+        <div class="deployment">
+          <figure class="deployment-figure">
+            <img
+              src="../assets/deploy_rice_field.jpg"
+              alt="Electronic component-themed tools deployed across a rice field"
+            >
+          </figure>
+          <div class="deployment-text">
+            <h3><span class="deployment-index">01</span>Rice Field</h3>
+            <p>
+              The managing farmer shared a tradition: a water deity inhabited
+              the household well, honored with a bamboo winnowing basket. We
+              fabricated a ceramic-capacitor-themed scarecrow modeled on the
+              basket, staked LED-themed scarecrows at water-arrival monitoring
+              points and capacitor-themed scarecrows at drainage-prone points,
+              and connected them with jumper-wire-themed naruko. The farmer's
+              situated knowledge was externalized as the spatial configuration
+              of tools — water-management judgment and land-based belief
+              becoming simultaneously legible within a single arrangement.
+            </p>
+          </div>
+        </div>
+
+        <div class="deployment">
+          <figure class="deployment-figure">
+            <img
+              src="../assets/deploy_cabbage_field.jpg"
+              alt="Jumper-wire-themed naruko strung as a sacred rope across a cabbage field at the foot of a volcano"
+            >
+          </figure>
+          <div class="deployment-text">
+            <h3><span class="deployment-index">02</span>Cabbage Field</h3>
+            <p>
+              In a cabbage field at the foot of an active volcano venerated as
+              a divine body, the jumper-wire-themed naruko was positioned as a
+              sacred rope demarcating sacred from everyday space, while
+              capacitor-themed scarecrows were placed at drainage-prone points.
+              The naruko both linked points within the field and separated the
+              field from the volcano — upon insertion, the tools became
+              entities simultaneously mediating agricultural judgment and
+              local belief.
+            </p>
+          </div>
+        </div>
+
+        <div class="deployment">
+          <figure class="deployment-figure">
+            <img
+              src="../assets/deploy_harvest_festival.jpg"
+              alt="Participants circumambulating LED-themed scarecrows around an op-amp-themed altar stand during the harvest festival"
+            >
+          </figure>
+          <div class="deployment-text">
+            <h3><span class="deployment-index">03</span>Harvest Festival</h3>
+            <p>
+              At a community farm, we held a festival reinterpreting a nearby
+              Shinto shrine's harvest ritual through electronics prototyping,
+              with twenty-eight participants. An eight-legged altar stand was
+              reinterpreted as an op-amp — eight legs, eight pins — and
+              LED-themed scarecrows marked the four corners as four seasons.
+              Participants circumambulated the scarecrows, struck clappers and
+              bells, and shook the ropes to enact gratitude bodily. At the
+              closing ritual, pulling the scarecrows from the ground sent the
+              deities to the mountains and opened the circuit simultaneously.
+              Six of ten questionnaire respondents perceived the field after
+              the festival as "a living presence."
+            </p>
+          </div>
+        </div>
       </section>
+
+      <!-- ============ Future Work ============ -->
+      <section class="project-section" aria-labelledby="future-title">
+        <h2 id="future-title">Future Work</h2>
+        <p>
+          The deployments showed that the placement of tools can simultaneously
+          mediate situated knowledge, belief, and bodily ritual. Future work
+          will test this across a wider range of settings, improve positioning
+          accuracy, and develop tools capable of more complex logical
+          operations — conditional branching via transistors, flow limitation
+          via resistors — extending Breadboard Farming as a more dynamic and
+          scalable, ecologically situated artistic practice.
+        </p>
+      </section>
+
+      <!-- ============ Citation ============ -->
+      <!-- <section class="project-section" aria-labelledby="citation-title">
+        <h2 id="citation-title">BibTeX</h2>
+        <pre class="citation-block"><code>@inproceedings{horiuchi2026agriculturepunk,
+  author    = {Horiuchi, Yuki and Furuta, Karen and Li, Jingjing and Ochiai, Yoichi},
+  title     = {Agriculture Punk: Hello World from Breadboard Farming},
+  booktitle = {Special Interest Group on Computer Graphics and Interactive
+               Techniques Conference Posters (SIGGRAPH Posters '26)},
+  year      = {2026},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  doi       = {10.1145/3799825.3818733}
+}</code></pre>
+      </section> -->
+
+      <footer class="project-footer">
+        <p>
+          This work is licensed under a
+          <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>
+          license. © 2026 the authors.
+        </p>
+        <p>
+          Part of <a href="../">Agriculture Punk</a> — a movement toward the
+          computerization of farmland.
+        </p>
+      </footer>
     </main>
   </body>
 </html>
