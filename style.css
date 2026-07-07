@@ -395,22 +395,19 @@ button:focus-visible {
 }
 
 .project-teaser {
-  display: grid;
-  min-height: clamp(15rem, 42vw, 25rem);
-  place-items: center;
+  position: relative;
   margin: 0 auto;
+}
+
+.project-teaser img {
+  width: 100%;
   border: 1px solid #d8d8d8;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)),
-    url("./assets/siggraph26-teaser.webp") center / cover no-repeat,
-    linear-gradient(90deg, rgba(111, 86, 55, 0.12) 1px, transparent 1px)
-      0 0 / 42px 42px,
-    linear-gradient(rgba(111, 142, 71, 0.13) 1px, transparent 1px)
-      0 0 / 42px 42px,
-    #f4f1e9;
 }
 
 .project-teaser figcaption {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
   padding: 0.35rem 0.65rem;
   border: 1px solid rgba(17, 16, 13, 0.22);
   background: rgba(255, 255, 255, 0.82);
